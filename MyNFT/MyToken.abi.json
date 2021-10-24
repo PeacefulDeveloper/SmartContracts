@@ -1,0 +1,47 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "creatNewGun",
+			"inputs": [
+				{"name":"Name","type":"string"},
+				{"name":"TypeOfGun","type":"string"},
+				{"name":"Damage","type":"uint8"},
+				{"name":"Range","type":"uint8"},
+				{"name":"RateOfFire","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sellGun",
+			"inputs": [
+				{"name":"Name","type":"string"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"Name","type":"string"},{"name":"TypeOfGun","type":"string"},{"name":"Damage","type":"uint8"},{"name":"Range","type":"uint8"},{"name":"RateOfFire","type":"uint8"}],"name":"gunsArr","type":"tuple[]"},
+		{"name":"gunToOwner","type":"optional(cell)"},
+		{"name":"priceOfGun","type":"optional(cell)"}
+	]
+}
